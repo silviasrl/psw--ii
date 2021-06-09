@@ -154,27 +154,27 @@
     <div class="row text-center">
       <div class="col-md-4">
           <img src="images/1.jpeg" alt="" width="225">
-          <h4 class="service-heading">Yoi</h4>
-          <p class="text-muted">Santuy.</p>
+          <h4 class="service-heading">Promo Keluarga</h4>
+          <p class="text-muted">Diskon 20 %</p>
       </div>
 
       <div class="col-md-4">
           <img src="images/2.jpeg" alt="" width="225" height="150">
-          <h4 class="service-heading">Yoi</h4>
-          <p class="text-muted">Santuy.</p>
+          <h4 class="service-heading">Promo Libur Nasional</h4>
+          <p class="text-muted">Diskon 25%</p>
       </div>
 
       <div class="col-md-4">
           <img src="images/3.jpeg" alt="" width="225" height="150">
-          <h4 class="service-heading">Yoi</h4>
-          <p class="text-muted">Santuy.</p>
+          <h4 class="service-heading">Promo Lebaran</h4>
+          <p class="text-muted">Diskon 30%</p>
       </div>
       <div class="row">
         <div class="col-md-4"></div>
         <div class="col-md-4">
         <img src="images/4.jpeg" alt="" width="225">
-        <h4 class="service-heading">Yoi</h4>
-          <p class="text-muted">Santuy.</p>
+        <h4 class="service-heading">Promo Ulang Tahun</h4>
+          <p class="text-muted">Diskon 15%</p>
         </div>
       </div>
 
@@ -227,4 +227,3 @@
 
 
     <hr class="half-rule">
-
