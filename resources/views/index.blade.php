@@ -52,22 +52,22 @@
           
               <li> <a href="#kereta">Kereta</a></li>
             </ul>
-          
-           <!-- Kereta -->
-              <div class="tab-pane" id="kereta">
-                <form action="{{ url('booking/search') }}" method="post" ><br>
+            
+     <!-- Kereta -->
+            <div class="tab-pane" id="kereta">
+                <form action="{{ url('pesan/store') }}" method="post" ><br>
                   {{ csrf_field() }}
                   <center><div class="col-md-6">
                    <label for="nama" id="nama">Nama Lengkap</label>
-                    <input type="text" id="nama" width="80%">
+                    <input type="text" name="nama_lengkap" id="nama" width="80%">
                   </div>
                   <div class="col-md-6">
                     <label for="nama" id="nama">Nomor Telepon</label>
-                    <input type="number" id="nomor">
+                    <input type="number" name="no_hp" id="nomor">
                   </div><br></center><br>
                   <div class="col-md-4">
                     <label for="from">Kota Asal</label>
-                      <select class='select2' id="select2" name="from_code" >
+                      <select class='select2' id="select2" name="kota_asal" >
                         <option value="">Pilih</option>
                         @foreach ($train_station as $ts)
                           <option value="{{$ts->code}}">{{"$ts->city - $ts->station_name ($ts->code)"}}</option>
@@ -77,7 +77,7 @@
 
                   <div class="col-md-4">
                     <label for="kotatujuan">Kota Tujuan</label>
-                      <select class="select2" id="select2" name="destination_code" >
+                      <select class="select2" id="select2" name="kota_tujuan" >
                         <option value="">Pilih</option>
                         @foreach ($train_station as $ts)
                           <option value="{{$ts->code}}">{{$ts->city}} - {{$ts->station_name}} ({{$ts->code}})</option>
@@ -87,7 +87,7 @@
 
                   <div class="col-md-4">
                       <label for="kelas kereta">Kelas Kereta</label>
-                        <select class="form-control" name="class">
+                        <select class="form-control" name="kelas_kereta">
                             <option value="Ekonomi">Ekonomi</option>
                             <option value="Bisnis">Bisnis</option>
                             <option value="Eksekutif">Eksekutif</option>
@@ -96,8 +96,8 @@
 
                   <div class="col-md-4">
                     <label for="Perjalanan">Perjalanan</label>
-                        <select class='form-control type' name="type" >
-                            <option value="st">Sekali Jalan</option>
+                        <select class='form-control type' name="perjalanan" >
+                            <option value="Sekali Jalan">Sekali Jalan</option>
                             
                           </select>
                   </div>
@@ -105,13 +105,13 @@
 
                   <div class="col-md-4">
                       <label for="berangkat">Tanggal Berangkat</label>
-                      <input type="text" class="form-control datepicker" placeholder="30/01/2018" name='date' >
+                      <input type="text" class="form-control datepicker" placeholder="30/01/2018" name='tanggal_berangkat' >
                   </div>
 
                 
                   <div class="col-md-2">
                     <label for="dewasa">Dewasa</label>
-                      <select class="form-control"  name="adult" >
+                      <select class="form-control"  name="dewasa" >
                           <option value="1">1</option>
                           <option value="2">2</option>
                           <option value="3">3</option>
@@ -121,7 +121,7 @@
 
                   <div class="col-md-2">
                     <label for="anak">Anak-Anak</label>
-                      <select class="form-control"  id="child" name="child" >
+                      <select class="form-control"  id="child" name="anak" >
                           <option value="0">0</option>
                           <option value="1">1</option>
                           <option value="2">2</option>

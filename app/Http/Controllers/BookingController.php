@@ -9,6 +9,7 @@ use App\Models\DetailBooking;
 use App\Models\BankAccount;
 use App\Models\Transaction;
 use DB;
+use App\Pesan;
 
 use Auth;
 
@@ -27,7 +28,7 @@ class BookingController extends Controller
 
     public function index()
     {
-      $booking = Booking::all();
+      $booking = Pesan::all();
       return view('admin.booking.index', compact('booking'));
     }
 

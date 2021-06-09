@@ -37,21 +37,18 @@
         <tbody>
           @foreach ($booking as $data)
             <tr>
-              <td>{{ $loop->iteration }}</td>
-              <td>{{ $data->booking_code }}</td>
-              <td>{{ date('d-m-Y', strtotime($data->created_at)) }}</td>
-              @if($data->vehicle == "plane")
-              <td>Pesawat</td>
-            @else
-              <td>Kereta Api</td>
+                <td>{{$data->id_pesan}}</td>
+                <td>{{$data->nama_lengkap}}</td>
+                <td>{{$data->no_hp}}</td>
+                <td>{{$data->kota_tujuan}}</td>
+                <td>{{$data->kelas_kereta}}</td>
+                <td>{{$data->perjalanan}}</td>
+                <td>{{$data->tanggal_berangkat}}</td>
+                <td>{{$data->dewasa}}</td>
+                <td>{{$data->anak}}</td>
 
-              @endif
-              <td>Rp. {{number_format($data->bill)}}</td>
-              <!-- <td>
-                  <a href="{{ url('admin/edit/'.$data->id)}}" class="fa fa-info-circle"></a>
-                  <a href="{{ url('admin/edit/'.$data->id)}}" class="fa fa-minus-circle"></a>
-                  <a href="{{ url('admin/edit/'.$data->id)}}" class="fa fa-trash 5x"></a>
-              </td> -->
+
+
             </tr>
             @endforeach
         </tbody>

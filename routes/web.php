@@ -50,3 +50,6 @@ Route::group(['prefix'=>'test'], function(){
   Route::get('export/{type}', 'BookingController@export');
   Route::post('import', 'BookingController@import');
 });
+
+
+Route::post('pesan/store','HomeController@store');
